@@ -1,0 +1,277 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(../Fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Lemon Milk Regular";
+    src: url(../Fonts/LEMONMILK-Regular.otf);
+}
+
+@font-face {
+    font-family: "Montserrat SemiBold" ;
+    src: url(../Fonts/Montserrat-SemiBold.ttf);
+}
+
+body {
+    background-color: #252525;
+}
+
+.contact section, h4, p {
+    color: white;
+    font-weight: normal;
+}
+
+.contact-pa section:first-of-type aside {
+   grid-column: 2 / 3;
+   grid-row: 1 / 3;
+   background-color: #252525;
+   display: grid;
+   grid-template-rows: 6vw 8vw 2vw 2vw 1.6vw 1.5vw 6vw 2vw 2vw 1.5vw 1.5vw 6vw 3vw 6vw;
+   padding: 0 4vw;
+}
+
+.contact-pa section:first-of-type aside h4 {
+    grid-row: 2 /3;
+    font-family: "Lemon Milk Regular"; 
+    font-size: 3vw;
+}
+
+.contact-pa section:first-of-type p {
+    font-family: "Montserrat";
+}
+
+.contact-pa section:first-of-type aside > p:first-of-type {
+    grid-row: 3 / 4;
+    align-self: center;
+    font-size: 1.5vw;
+}
+
+.contact-pa section:first-of-type > aside > p:nth-of-type(2) {
+    grid-row: 5 / 6;
+    grid-column: 1 / 2;
+    font-size: 1.3vw;
+}
+
+.contact-pa section:first-of-type > aside > p:nth-of-type(3) {
+    grid-row: 6 / 7;
+    grid-column: 1 / 2;
+    font-size: 1.3vw;
+}
+
+.contact-pa section:first-of-type > aside > p:nth-of-type(4) {
+    grid-row: 8 / 9;
+    grid-column: 1 / 2;
+    font-size: 1.5vw;
+}
+
+.contact-pa section:first-of-type > aside > p:nth-of-type(5) {
+    grid-row: 10 / 11;
+    grid-column: 1 / 2;
+    font-size: 1.3vw;
+}
+
+.contact-pa section:first-of-type > aside > p:nth-of-type(6) {
+    grid-row: 11 / 12;
+    grid-column: 1 / 2;
+    font-size: 1.3vw;
+}
+
+.contact-pa section:first-of-type > aside > a {
+    height: 2vw;
+    grid-row: 13 / 14;
+    grid-column: 1 / 2;
+    align-self: center;
+}
+
+.contact-pa section:first-of-type > aside img {
+    height: 2vw;
+    grid-row: 13 / 14;
+    grid-column: 1 / 2;
+    align-self: center;
+}
+
+.contact-pa section:first-of-type > aside > p:nth-of-type(7) {
+    grid-row: 13 / 14;
+    grid-column: 1 / 2;
+    font-size: 1.3vw;
+    align-self: center;
+    margin-left: 3vw;
+}
+
+
+.contact-pa section:last-of-type > h4 {
+    font-family: "Lemon Milk Regular";
+    font-size: 2.6vw;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    justify-self: center;
+    align-self: start;
+}
+
+.contact-pa section:first-of-type {
+    display: grid;
+    grid-template-columns: auto 40vw;
+    grid-template-rows: 30vw 20vw 10vw;
+    background-image: url(../Images/1000_F_437337488_tV2hNSRsu10d0T3Xn13yhjpq9jIpZtrI.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.contact-pa section:last-of-type {
+    display: grid;
+    grid-template-columns: auto 51vw auto;
+    grid-template-rows: 8vw 8vw 12.5vw 12.5vw 12.5vw 4vw;
+    align-items: center;
+}
+
+.contact-pa section:last-of-type div:first-of-type {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.contact-pa section:last-of-type div:nth-of-type(2) {
+    grid-column: 2;
+    grid-row: 4;
+}
+
+.contact-pa section:last-of-type div:last-of-type {
+    grid-column: 2;
+    grid-row: 5;
+}
+
+.contact-pa section:last-of-type > div > h4:first-of-type {
+    background-color: white;
+    color: black;
+    font-size: 1.6vw;
+    font-family: "Lemon Milk Regular";
+    padding: 1vw 1.5vw;
+}
+
+.contact-pa section:last-of-type div {
+    background-color: white;
+    height: 10.5vw;
+}
+
+.contact-pa section:last-of-type > div > p {
+    color: black;
+    font-family: "Montserrat";
+    padding: 0 1.5vw;
+    font-size: 1.1vw;
+}
+
+.contact-pa section:last-of-type > h4 > br {
+    display: none;
+} 
+
+@media (max-width: 500px){
+    
+    .contact-pa section:first-of-type {
+        grid-template-columns: 65vw auto;
+        grid-template-rows: 60vw 40vw 20vw;
+    }
+
+    .contact-pa section:first-of-type aside {
+        grid-column: 1;
+        grid-template-rows: 14vw 22vw 4vw 4vw 3vw 3vw 12vw 4vw 4vw 3vw 3vw 12vw 6vw 12vw;
+        padding: 0 8vw;
+    }
+
+    .contact-pa section:first-of-type aside h4 {
+        grid-row: 2;
+        font-size: 6vw;
+    }
+
+    .contact-pa section:first-of-type aside > p:first-of-type {
+        font-size: 3vw;
+    }
+
+    .contact-pa section:first-of-type > aside > p:nth-of-type(2) {
+        font-size: 2.6vw;
+    }
+
+    .contact-pa section:first-of-type > aside > p:nth-of-type(3) {
+        font-size: 2.6vw;
+    }
+
+    .contact-pa section:first-of-type > aside > p:nth-of-type(4) {
+        font-size: 3vw;
+    }
+
+    .contact-pa section:first-of-type > aside > p:nth-of-type(5) {
+        font-size: 2.6vw;
+    }
+
+    .contact-pa section:first-of-type > aside > p:nth-of-type(6) {
+        font-size: 2.6vw;
+    }
+
+    .contact-pa section:first-of-type > aside > a {
+        height: 4vw;
+    }
+
+    .contact-pa section:first-of-type > aside img {
+        height: 4vw;
+    }
+
+    .contact-pa section:first-of-type > aside > p:nth-of-type(7) {
+        font-size: 2.6vw;
+        margin-left: 6vw;
+    }
+
+    .contact-pa section:last-of-type {
+        display: grid;
+        grid-template-columns: auto 90vw auto;
+        grid-template-rows: 32vw 25vw 25vw 25vw 10vw;
+        align-items: center;
+    }
+
+    .contact-pa section:last-of-type > h4 > br {
+        display: block;
+    } 
+
+    .contact-pa section:last-of-type > h4 {
+        grid-row: 1;
+        font-size: 6vw;
+        align-self: end;
+        text-align: center;
+        padding-bottom: 5vw;
+    }
+
+    .contact-pa section:last-of-type div:first-of-type {
+        grid-row: 2;
+    }
+
+    .contact-pa section:last-of-type div {
+        height: 20vw;
+    }
+
+    .contact-pa section:last-of-type div:nth-of-type(2) {
+        grid-row: 3;
+    }
+
+    .contact-pa section:last-of-type div:last-of-type {
+        grid-row: 4;
+    }
+
+    .contact-pa section:last-of-type > div > h4:first-of-type {
+        background-color: white;
+        color: black;
+        font-size: 2.5vw;
+        font-family: "Lemon Milk Regular";
+        padding: 3vw 2vw;
+    }
+
+    .contact-pa section:last-of-type > div > p {
+        color: black;
+        font-family: "Montserrat";
+        padding: 0 2vw;
+        font-size: 2vw;
+    }
+}
